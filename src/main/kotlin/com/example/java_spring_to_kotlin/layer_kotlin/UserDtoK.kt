@@ -1,3 +1,7 @@
 package com.example.java_spring_to_kotlin.layer_kotlin
 
-data class UserDtoK(private val name: String)
+class UserDtoK(val name: String, private val isActive: Boolean) {
+    fun isActive(): Boolean {
+        return true
+    }
+}
